@@ -12,7 +12,7 @@ body{
     padding-top: 5%;
 }
 .titulo{
-    margin-left: 12%;
+    text-align: center;
 }
 
 .container{
@@ -83,4 +83,39 @@ button{
 
 button:hover{
     background-color: rgb(127, 168, 255);
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        margin-left: 0;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        padding: auto;
+        height: 80vh;
+    }
+    .escolhas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        width: auto;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: rgb(104, 130, 216);
+        border: none;
+        transition: 300ms;
+        padding: 10px;
+        margin: 10px;
+    }
 }
