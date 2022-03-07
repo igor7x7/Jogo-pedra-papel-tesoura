@@ -6,7 +6,7 @@ const escolhas = document.querySelectorAll('button')
 let escolhaJogador
 let escolhaComputador
 
-escolhas.forEach(escolhas => escolhas.addEventListener('click', (e) => {
+escolhas.forEach(escolha => escolha.addEventListener('click', (e) => {
     escolhaJogador = e.target.id
     suaEscolha.innerHTML = escolhaJogador
     geradorComputadorEscolha()
